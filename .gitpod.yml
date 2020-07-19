@@ -1,7 +1,12 @@
+  
 image:
   file: .gitpod.Dockerfile
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 8081
+
 tasks:
-  - command: sbt ~run
-vscode:
-  extensions:
-    - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
+  - init: sudo apt-get install openjdk-8-jdk && sudo update-java-alternatives -s java-1.8.0-openjdk-amd64 && grep -qxF 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64' /home/gitpod/.bashrc || echo 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64' >> /home/gitpod/.bashrc
+    command: source ~/.bashrc && java -version
