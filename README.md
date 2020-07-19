@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/schoeberl/chisel-examples)
+
 # Chisel Examples
 
 This repository is a collection of code examples for [Chisel](https://chisel.eecs.berkeley.edu/).
