@@ -1,10 +1,7 @@
 image:
   file: .gitpod.Dockerfile
-
 tasks:
   - command: sbt ~run
-  - init: make
-  
 vscode:
   extensions:
     - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
